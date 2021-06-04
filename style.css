@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS";
+}
+
+body {
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.main-header__title {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 2.5rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  padding: 3rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 2rem;
+  box-shadow: 3px 3px 10px 3px black;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.form_input input {
+  height: 2rem;
+  padding: 5px;
+  outline-style: none;
+}
+
+.form_input input::placeholder {
+  opacity: 0.5;
+}
+
+#form_submit:active {
+  box-shadow: none;
+}
+
+#form_submit {
+  border: none;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px 0px black;
+  border-radius: 1rem;
+  width: 30%;
+  margin-top: 2.5rem;
+  padding: 10px;
+  outline-style: none;
+}
