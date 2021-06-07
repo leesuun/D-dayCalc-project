@@ -16,27 +16,32 @@
         </h2>
       </header>
 
-      <div class="content">
-        <time class="content__nowtime"
-          >현재 시간: xxxx년 xx월 xx일 xx시 xx분 xx초</time
-        >
+      <main class="content">
+        <div class="bg-img"></div>
+        <span class="nowtime__sub">(현재시각)</span>
+        <time class="nowtime js-nowTime">현재 시간: xxxx년 xx월 xx일 xx시 xx분 xx초</time>
 
-        <form action="#">
+        <span class="site__way">(년, 월, 일 숫자만 기입)</span>
+
+        <form action="#" class="js-form">
           <div class="form_input">
             <input
-              id="input__year"
               type="text"
-              placeholder="write the year..."
+              id="input__year"
+              class="input__year js-inputYear"
+              placeholder="write a year..."
             />
             <input
               id="input__month"
+              class="input__month js-inputMonth"
               type="text"
-              placeholder="write the month..."
+              placeholder="write a month..."
             />
             <input
               id="input__date"
               type="text"
-              placeholder="write the date..."
+              class="input__date js-inputDate"
+              placeholder="write a date..."
             />
           </div>
           <input
@@ -45,11 +50,10 @@
             onclick="getTime()"
             value="계산"
           />
+          
         </form>
-
-        <div class="gaptime"></div>
       </div>
-    </div>
+    </main>
     <script src="index.js"></script>
     <script
       src="https://kit.fontawesome.com/6833760571.js"

@@ -25,13 +25,39 @@ body {
 
 .content {
   display: flex;
+  background-image: url("img/bg-img_inside.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
   flex-direction: column;
   align-items: center;
   margin-top: 3rem;
-  padding: 3rem 1rem;
-  border: 1px solid rgba(0, 0, 0, 1);
+  padding: 8rem 5rem;
   border-radius: 2rem;
-  box-shadow: 3px 3px 10px 3px black;
+  box-shadow: 5px 5px 20px 5px black;
+}
+.bg-img {
+  position: absolute;
+  background-image: url("img/bg-img2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2rem;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+}
+
+.nowtime__sub {
+  margin-right: 19.5rem;
+  font-size: 0.8rem;
+}
+
+.nowtime {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-shadow: 1px 1px black;
 }
 
 form {
@@ -39,12 +65,24 @@ form {
   flex-direction: column;
   align-items: center;
   margin-top: 1rem;
+  position: relative;
+}
+
+.site__way {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 3rem;
+  margin-right: 22rem;
+  margin-bottom: -0.5rem;
 }
 
 .form_input input {
   height: 2rem;
   padding: 5px;
   outline-style: none;
+  border-radius: 5px;
+
+  border: 3px solid white;
 }
 
 .form_input input::placeholder {
@@ -58,10 +96,51 @@ form {
 #form_submit {
   border: none;
   cursor: pointer;
+  background: linear-gradient(50deg, #00a8ff, #9c88ff);
   box-shadow: 2px 2px 5px 0px black;
   border-radius: 1rem;
   width: 30%;
   margin-top: 2.5rem;
   padding: 10px;
   outline-style: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.resultbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  padding: 0.5rem;
+  background: linear-gradient(50deg, #b6d7ff, #9c88ff);
+
+  width: 100%;
+  height: 100px;
+  bottom: 10rem;
+  border-radius: 10px;
+  animation: fadeIn 0.2s linear;
+}
+
+.cancelBtn {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  background: none;
+  border-style: none;
+  color: white;
+  cursor: pointer;
+}
+
+.timeRemaining {
+  font-size: 1.5rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
